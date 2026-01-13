@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In JS</title>
+    <style>
+        .container{
+            background-color: hotpink;
+            /* height: 350px; */
+            width: 350px;
+            border: 4px solid black;
+            padding: 20px;
+            margin: 30px;
+        }
+        .box{
+            margin: 10px;
+            background-color: greenyellow;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        form{
+            background-color: grey;
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+        }
+        #MyInput{
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" onkeydown="MouseFunction()" style="background-color: red">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+
+    <button class="MeraButton">
+        Click Me to add New Box
+    </button>
+    <!-- <button class="MeraButton">
+        Click Me to add New Box
+    </button> -->
+
+    <!-- Keyboard events -->
+    <form id="form">
+        <label for="">OnKeyUp</label> <!-- No need to press other key to run  -->  
+        <input type="text" onkeyup="document.getElementById('form').style.backgroundColor = this.value">
+        <br><br>
+        <label for="">OnKeyDown</label> <!--  Need to press other key to run  -->  
+        <input type="text" onkeydown="document.getElementById('form').style.backgroundColor = this.value">
+        <br><br>
+        <label for="">OnKeyPress</label>
+        <input type="text" onkeypress="document.getElementById('form').style.backgroundColor = this.value">
+    </form>
+
+    <!-- input event -->
+    <input type="text" id="MyInput" placeholder="Input Event">
+    <p id="Inputpara"></p>
+
+    <button id="btn">Click me</button>
+
+    <textarea  id="textspace" placeholder="Iam text"></textarea>
+
+    <p id="Mypara"></p>
+
+    <!-- Select Dropdown  -->
+     <select id="selector">
+        <option value="option1">Option1</option>
+        <option value="option2">Option2</option>
+        <option value="option3">Option3</option>
+     </select>
+     
+     <button class="thisBtn">
+        This Button
+     </button>
+
+     <div class="parentBtn">
+        <button>B1</button>
+        <button>b2</button>
+        <button>b3</button>
+        <button>b4</button>
+     </div>
+
+    <script src="Event.JS">
+
+    </script>
+</body>
+</html>

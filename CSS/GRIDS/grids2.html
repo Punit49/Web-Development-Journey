@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: dimgray;
+            padding: 2rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(4, 100px);
+            grid-template-areas: "header header header"
+                                 "sbr main main"
+                                 "sbr main main"
+                                 "sbr main main"
+                                 "footer footer footer";
+            justify-content: center;
+
+        }
+        .items{
+            padding: 1rem;
+            border: 4px solid white;
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+        #box-1{
+            grid-area: header;
+        }
+        #box-2{
+            grid-area: header;
+        }
+        #box-3{
+            grid-area: header;
+        }
+        #box-4{
+            grid-area: sbr;
+        }
+        #box-5{
+            grid-area: sbr;
+        }
+        #box-6{
+            grid-area: sbr;
+        }
+        #box-7{
+            grid-area: main;
+        }
+        #box-8{
+            grid-area: main;
+        }
+        #box-9{
+            grid-area: main;
+        }
+        #box-10{
+            grid-area: main;
+        }
+        #box-11{
+            grid-area: main;
+        }
+        #box-12{
+            grid-area: main;
+        }
+        #box-13{
+            grid-area: footer;
+        }
+        #box-14{
+            grid-area: footer;
+        }
+        #box-15{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="box-1">A-1</div>
+        <div class="items" id="box-2">A-2</div>
+        <div class="items" id="box-3">A-3</div>
+        <div class="items" id="box-4">A-4</div>
+        <div class="items" id="box-5">A-5</div>
+        <div class="items" id="box-6">A-6</div>
+        <div class="items" id="box-7">A-7</div>
+        <div class="items" id="box-8">A-8</div>
+        <div class="items" id="box-9">A-9</div>
+        <div class="items" id="box-10">A-10</div>
+        <div class="items" id="box-11">A-11</div>
+        <div class="items" id="box-12">A-12</div>
+        <div class="items" id="box-13">A-13</div>
+        <div class="items" id="box-14">A-14</div>
+        <div class="items" id="box-15">A-15</div>
+    </div>
+</body>
+</html>

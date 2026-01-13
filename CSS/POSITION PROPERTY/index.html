@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION PROPERTY</title>
+    <link rel="stylesheet" href="./resources/css/ress.css">
+</head>
+    <style>
+        .container2{
+            background-color: aqua;
+            height: 3000px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: dimgray;
+        }
+        .container{
+            border: 2px solid black;
+            /* background-color: black; */
+            margin: 5px;
+            height: 4000px;
+            
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            margin: 15px;
+        }
+        #img1{
+            position: static;
+        }
+        #img2{
+            position: relative;
+            top: 100px;
+        }
+        #img3{
+            position: absolute;
+            top: 240px;
+            left: 6px;
+        }
+        #img4{
+            position: sticky;
+            top: 0px;
+            left: 500px;
+            bottom: 0px ;
+        }
+        #img5{
+            position: fixed ;
+            right: 0px;
+            top: 0;
+            bottom: 0px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <img id="img1" src="img1.png" alt="one">
+        <img id="img2" src="img2.jpeg" alt="two">
+        <img id="img3" src="img3.png" alt="three">
+        <img id="img4" src="img4.jpeg" alt="four">
+        <img id="img5" src="img5.png" alt="five">
+    </div>
+
+    <div class="container2">
+
+
+    </div>
+</body>
+</html>``

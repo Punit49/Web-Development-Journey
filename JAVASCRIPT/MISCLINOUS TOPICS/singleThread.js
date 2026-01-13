@@ -1,0 +1,1 @@
+// ? JavaScript is fundamentally a single-threaded language. This means it has one call stack and one memory heap, and it executes code sequentially, one instruction at a time. It must complete the execution of a piece of code before moving on to the next.    

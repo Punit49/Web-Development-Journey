@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: dimgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- important -->
+    <!-- isme black wala part table head tha [table head me di gayi rowspan ya colspan table body pr apply nahi hoti] -->
+    <table border="1" style="text-align: center; border: 3px solid black;">
+        <thead>
+        <tr>
+            <th rowspan="3">day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Start</th>
+            <th>End</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 AM</td>
+                <td rowspan="2">5:00 PM</td>
+                <td>Introduction to Html</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and RELAX NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 AM</td>
+                <td>11:00 AM</td>
+                <td rowspan="1.5">C++</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>2:00 PM</td>
+                <td>JAVA</td>
+            </tr>
+            <tr>
+                <td>2:00 PM</td>
+                <td>5:00 PM</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 AM</td>
+                <td>12:00 AM</td>
+                <td>Web Development</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

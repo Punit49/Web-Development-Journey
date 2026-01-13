@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <form method="post">
+        <input type="button" value="Email" onclick="SendMail()">
+    </form>
+
+    <script type="text/javascript">
+        function SendMail(){
+            Email.send({
+                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                To: "developerpunit5@gmail.com",
+                From: "therealpunit5@gmail.com",
+                Subject: "Sending Mail Using JS",
+                Body: "I have recieved the mail"
+            }).then((msg) => {
+                alert("Mail Sent!");
+            }).catch((err) => {
+                alert("Error - ", err);
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TAGS</title>
+</head>
+<body>
+    <!-- nesting of elements [p>p>div>p]-->
+    <p>
+        <p>
+            <div>
+                <p></p>
+            </div>
+        </p>
+    </p>
+
+    <!-- add two or more tage once [div+section] -->
+    <div></div>
+    <section></section>
+
+    <!-- add random text [p>lorem5] -->
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- add text to any tag [p{hyy i am para}] -->
+    <p>hyy i am para</p>
+
+    <!-- add id [p#para1] -->
+    <p id="para1"></p>
+
+    <!-- add class [div.new1] -->
+    <div class="new1"></div>
+
+    <!-- add multiple class [div.new1.new2] -->
+    <div class="new1 new2"></div>
+
+    <!--ol and ul list ol>li*3 -->
+   <ol>
+    <li></li>
+    <li></li>
+    <li></li>
+   </ol>
+
+   <!-- ol>(li>p*3)*2 -->
+   <ol>
+    <li>
+        <p></p>
+        <p></p>
+        <p></p>
+    </li>
+    <li>
+        <p></p>
+        <p></p>
+        <p></p>
+    </li>
+   </ol>
+
+    <!-- table [table>(tr>td*4)*2] -->
+    <table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+   </table>
+
+   <!-- more [section>article>li>p{hyyy i am para}] -->
+   <section>
+    <article>
+        <li>
+            <p>hyyy i am para</p>
+        </li>
+    </article>
+   </section>
+
+   <!-- [ ul>td>div.cont>p>{hey}>dl*3 ] -->
+   <ul>
+     <td>
+        <div class="cont">
+            <p>
+                hey
+                <dl></dl>
+                <dl></dl>
+                <dl></dl>
+            </p>
+        </div>
+     </td>
+   </ul>
+
+   <!-- mail using a tag -->
+   <a href="tel:7877145775">call</a>
+</body>
+</html>

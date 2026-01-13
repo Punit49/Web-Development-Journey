@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="Main-Container">
+        <!-- Navigation-Menu -->
+        <header>
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="#" class="page-Title">
+                        <span class="lText">L</span>
+                        earnify
+                </a>
+
+                <div class="nav-Content makeFlex">
+                    <!-- Menu -->
+                    <div class="nav-Links">
+                        <ul class="makeFlex">
+                            <li><a href="">Home</a></li>
+                            <li><a href="#plansId">Plans</a></li>
+                            <li><a href="#coursesId">Courses</a></li>
+                            <li><a href="#FAQId">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="nav-Buttons makeFlex">
+                        <a class="cart-Button">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                        <button class="log-Button">Log in</button>
+                        <button class="sign-Button">Get started</button>
+                    </div>
+                </div>
+
+                <!-- HamBurger -->
+                <label class="hamburger-menu makeNone">
+                    <input class="sideCheckBox" type="checkbox">
+                </label>
+
+                <!-- Sidebar -->
+                <aside class="sidebar makeNone">
+                    <ul>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">SignUp</a></li>
+                        <hr>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Price & Plans</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">More</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Cart</a></li>
+                    </ul>
+                </aside>
+
+            </nav>
+        </header>
+
+        <!-- Main Section -->
+        <main>
+            <!-- Hero section -->
+            <div class="hero-Section">
+                <div class="hero-Left">
+                    <p class="hero-tagline">
+                        <span id="first-auto-type"></span> <span id="second-auto-type"></span>
+                    </p>
+                    <p class="hero-Description">
+                        "Turn your ideas into reality with hands-on learning and real-world projects. Your journey to success starts here."
+                    </p>
+                    <button class="hero-Button">
+                        Get Started!
+                    </button>
+                </div>
+                <div class="hero-Right">
+                    <img src="/images/width_626.png" id="HeroImage" alt="Coding">
+                </div>
+            </div>
+
+            <div id="coursesId" class="rular"></div>
+
+            <!-- Course Section -->
+            <div class="course-Category" >
+                <h1 class="section-Head">All the skills you need in one place</h1>
+
+                <div class="course-Container">
+                    <div class="courses-Tab">
+                        
+                        <!-- Navigation Buttons -->
+                        <button id="courseCatLeft" class="courseCatBtn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button id="courseCatRight" class="courseCatBtn"><i class="fa-solid fa-angle-left"></i></button>
+                    </div>
+                    
+                    <div class="course-Wrapper">
+
+                        <!-- Course card Popup Auto generate by JS-->
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button id="course-tab-left" class="course-arrow-btn"><i class="fa-solid fa-angle-right"></i></button>
+                    <button id="course-tab-right" class="course-arrow-btn"><i class="fa-solid fa-angle-left"></i></button>
+                </div>
+            </div>
+
+            <!-- <div class="rular"></div> -->
+
+            <!-- Steps cards section -->
+            <!-- <div class="whyChooseSection">
+                <h1 class="section-Head">Why Choose Learnify</h1>
+                <div class="whyChooseUs">
+                    <div class="whyChooseUsCards chooseCard1">
+                        <div class="cardContent">
+                            <div class="cardReason">
+                            LEARN FROM EXPERTS
+                            </div>
+                            <div class="cardDetails">
+                                Gain insights from industry-leading professionals with hands-on experience and deep domain knowledge.
+                            </div>
+                            <div class="cardBottom">
+                                <div class="cardQuotes">
+                                    <blockquote>
+                                        "Technology changes rapidly, and the best way to predict the future is to create it." 
+                                        <cite>
+                                            – Alan Kay
+                                        </cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardPageNo">
+                            4
+                        </div>
+                    </div>
+                    <div class="whyChooseUsCards WCUC chooseCard2" data-index="54.8%">
+                        <div class="cardContent">
+                            <div class="cardReason">
+                                HANDS-ON LEARNING
+                            </div>
+                            <div class="cardDetails">
+                                Engage in practical projects and real-life case studies to reinforce your learning and build industry-ready skills.
+                            </div>
+                            <div class="cardBottom">
+                                <div class="cardQuotes">
+                                    <blockquote>
+                                    "The beautiful thing about learning is that nobody can take it away from you."
+                                    <cite>
+                                        – B.B. King
+                                    </cite>
+                                </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardPageNo">
+                            3
+                        </div>
+                    </div>
+                    <div class="whyChooseUsCards WCUC chooseCard3" data-index="34%">
+                        <div class="cardContent">
+                            <div class="cardReason">
+                                FLEXIBLE LEARNING
+                            </div>
+                            <div class="cardDetails">
+                                Access courses anytime, anywhere, and learn at your own pace with structured yet flexible learning options.
+                            </div>
+                            <div class="cardBottom">
+                                <div class="cardQuotes">
+                                    <blockquote>
+                                    "If you don't keep up with technology, you'll be left behind."
+                                    <cite>
+                                        – Elon Musk
+                                    </cite>
+                                </blockquote>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardPageNo">
+                            2
+                        </div>
+                    </div>
+
+                    <div class="whyChooseUsCards WCUC chooseCard4 slided">
+                        <div class="cardContent">
+                            <div class="cardReason">
+                                INDUSTRY RELEVANT COURSES
+                            </div>
+                            <div class="cardDetails textFadeIn">
+                                Our courses are designed by experts to keep you updated with the latest technologies.
+                            </div>
+                            <div class="cardQuotes textFadeIn">
+                                <blockquote>
+                                    "The only way to stay ahead in technology is to never stop learning."
+                                    <cite>
+                                        – Satya Nadella
+                                    </cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        
+                        <div class="cardPageNo">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="rular" id="plansId"></div>
+
+            <!-- Payment plans section -->
+            <div class="plans-Container">
+                <div class="plans-Section">
+                    <h1 class="section-Head">Unlock Your Potential with the Right Plan</h1>
+                    <span>Start learning with a plan that fits your goals and budget.</span>
+                </div>
+                 <!-- 1 -->
+                <div class="allPlans">
+                    <div class="plans plan1 showingPlan">
+                        <div class="planHeading">
+                            <div class="planName">
+                                <p>Basic Plan</p>
+                                <span>1 Month</span>
+                            </div>
+                            <div class="planIcon">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <span class="arrowDown"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="planBottom">
+                            <p>Starting at ₹99 Per Month</p>
+                            <div class="planDetails">
+                                <li>✅ Access to all learning materials</li>
+                                <li>✅ No ads for an uninterrupted experience</li>
+                                <li>✅ Learn at your own pace</li>
+                            </div>
+                            <button class="getPlanBtn">
+                                <span>Start Subsrciption </span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="plans plan2">
+                        <div class="planHeading">
+                            <div class="planName">
+                                <p>Standard Plan</p>
+                                <span>3 Months</span>
+                            </div>
+                            <div class="planIcon">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <span class="arrowDown"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="planBottom">
+                            <p>Starting at ₹249 for 3 Months</p>
+                            <div class="planDetails">
+                                <li>✅ Everything in Basic Plan</li>
+                                <li>✅ Exclusive practice exercises</li>
+                                <li>✅ Early access to new content</li>
+                            </div>
+                            <button class="getPlanBtn">
+                                <span>Start Subsrciption </span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="plans plan3">
+                        <div class="planHeading">
+                            <div class="planName">
+                                <p>Premium Plan</p>
+                                <span>6 Months</span>
+                            </div>
+                            <div class="planIcon">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <span class="arrowDown"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="planBottom">
+                            <p>Starting at ₹399 Per Month</p>
+                            <div class="planDetails">
+                                <li>✅ Everything in Standard Plan</li>
+                                <li>✅ Priority support for queries</li>
+                                <li>✅ Special downloadable resources</li>
+                            </div>
+                            <button class="getPlanBtn">
+                                <span>Start Subsrciption </span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="rular"></div>
+
+            <!-- Review Cards -->
+            <div class="reviewCardContainer">
+                <h1 class="reviewTitle section-Head">
+                    See what others are achieving through learning
+                </h1>
+                <div class="reviewContainer">
+                    <!-- 1 -->
+                    <div class="reviewCards reviewCard1">
+                        <div class="reviewCardTop">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <span>"Learnify has made learning so accessible! The platform is easy to use, and I love how everything is well-structured. Highly recommended!"</span>
+                        </div>
+                        <div class="cardReviewBottom">
+                            <span>RY</span>
+                            <p>Rakesh Yadav</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="reviewCards reviewCard2">
+                        <div class="reviewCardTop">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <span>"This platform made learning so easy! I was able to build my first project confidently. Thank you for such a great experience."</span>
+                        </div>
+                        <div class="cardReviewBottom">
+                            <span>CN</span>
+                            <p>Chetan Nagda</p>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="reviewCards reviewCard3">
+                        <div class="reviewCardTop">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <span>"I never thought online learning could be this effective. Learnify’s interactive approach kept me engaged, and I actually enjoy studying now!"</span>
+                        </div>
+                        <div class="cardReviewBottom">
+                            <span>RK</span>
+                            <p>Raghav Kumawat</p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="reviewCards reviewCard3">
+                        <div class="reviewCardTop">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <span>"Thanks to Learnify, I finally found a place where I can learn at my own pace. The experience has been smooth, and I feel more confident in my skills now.""</span>
+                        </div>
+                        <div class="cardReviewBottom">
+                            <span>YS</span>
+                            <p>Yuvraj Singh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="rular" id="FAQId"></div>
+
+            <!-- FAQ Section  -->
+            <div class="FAQSection">
+                <h1 class="FAQHeading section-Head">Frequently Asked Questions</h1>
+                <div class="FAQBody">
+                    <!-- 1 -->
+                    <div class="FAQS FAQ-1">
+                        <div class="FAQQuestion">
+                            <span>What Is Learnify?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="FAQAnswer">
+                            Learnify is an online learning platform that offers industry-relevant tech courses to help you upskill and stay ahead in the rapidly evolving tech industry.
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="FAQS FAQ-2">
+                        <div class="FAQQuestion">
+                            <span>What types of courses does Learnify offer?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="FAQAnswer">
+                            We offer courses in Web Development, Data Science, Cybersecurity, AI & Machine Learning, Mobile App Development.                        
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="FAQS FAQ-3">
+                        <div class="FAQQuestion">
+                            <span>How do I enroll in a course?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="FAQAnswer">
+                            Simply create an account, browse our course catalog, and click "Enroll" on your desired course. You'll get instant access!                        
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="FAQS FAQ-4">
+                        <div class="FAQQuestion">
+                            <span>Do I need prior programming experience?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="FAQAnswer">
+                            Not necessarily! We offer beginner-friendly courses that guide you step by step. However, some advanced courses may require basic knowledge.                        
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="FAQS FAQ-5">
+                        <div class="FAQQuestion">
+                            <span>Can I learn at my own pace?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="FAQAnswer">
+                            Absolutely! Our courses are self-paced, allowing you to learn whenever it’s convenient for you.
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="FAQS FAQ-6">
+                        <div class="FAQQuestion">
+                            <span> How can I contact customer support?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="FAQAnswer">
+                            You can reach out to us via email or call for any queries or issues.
+                            <p>📧 Email: learnifyofficial8@gmail.com</p>
+                            <p>📞 Contact: +917877145775</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <!-- Footer -->
+        <div class="footer-HB">
+            <p class="section-Head">Top learners trust <a href="#">Learnify</a> to master in-demand skills.</p>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-items">
+                <ul class="footer-tag Explore">
+                    <h6>Explore</h6>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+    
+                <ul class="footer-tag About">
+                    <h6>About</h6>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+    
+                <ul class="footer-tag contact">
+                    <h6>Contact Us</h6>
+                    <li>Email: <a href="mailto:learnifyofficial8@gmail.com">learnifyofficial8@gmail.com</a></li>
+                    <li>Call: <a href="tel:+917877145775">+917877145775</a></li>
+                </ul>
+    
+                <ul class="footer-tag Connect">
+                    <h6> Connect With Us</h6>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <div class="footer-HB fDown">
+            <div class="web-title">
+                <a href="" class="page-Title">
+                    <span class="lText">L</span>
+                    earnify
+                </a>
+
+                <div class="copyright">
+                    © 2025 Learnify, Inc.
+                </div>
+            </div>
+
+            <div class="language">
+                <i class="fa-solid fa-globe"></i>
+                <span>English</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="/courseData.js"></script>
+    <script src="/Main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/Header.js"></script>
+</body>
+</html>
+

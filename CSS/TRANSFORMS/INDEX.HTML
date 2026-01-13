@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORMS</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .small{
+            border: 2px solid black;
+            padding: 5px;
+            background-color: aquamarine;
+            
+        }
+        .small:hover{
+            animation: rotate 3s linear  1;
+        }
+        @keyframes rotate {
+            100%{
+                rotate: -360deg;
+            }
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+            background: rgb(155, 243, 4);
+            border: 4px solid black;
+
+            /* tranisition */
+            transition: all 3s linear 0.5s ;
+        }
+        .box:hover{
+            transform: scale(1.5);
+            transform: skew(30deg);
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="small">
+                IT'S A DIV
+            </div>
+        </div>
+    </div>
+</body>
+</html>

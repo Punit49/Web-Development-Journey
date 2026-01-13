@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: dimgray;
+    text-align: center;
+}
+
+.div1{
+    margin: 4px;
+    padding: 4px;
+    background-color: rgb(202, 153, 153);
+    height: 700px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.child{
+    height: 150px;
+    width: 150px;
+    margin: 6px;
+    border: 3px solid black;
+}
+#c1{
+    background-color: lightblue; 
+}
+#c2{
+    background-color: lightyellow; 
+}
+#c3{
+    background-color: rgb(97, 48, 55) 
+}
+#c4{
+    background-color: lightgreen; 
+}
+
+@media (max-width : 600px){
+    .div1{
+        flex-direction: column;
+    }
+}

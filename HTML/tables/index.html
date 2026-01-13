@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+    <STYle>
+        .tableH , th{
+            border : 4px solid rgb(33, 111, 27);
+            background-color: orange;
+        } 
+        .class1{
+            border : 4px solid rgb(33, 111, 27);
+            text-align: center;
+            font-size: 50px;
+        }
+        td{
+            border : 2px solid rgb(33, 111, 27);
+            background-color: lightyellow;
+        }
+    </STYle>
+</head>
+<body>
+    <table class="class1" border="1">
+        <thead class="tableH"> 
+            <th>
+                Sr. No
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Roll No
+            </th>
+            <th>
+                Team       
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tableH">1</td>
+                <td>Punit Sahu</td>
+                <td>101</td>
+                <td>RCB</td>
+            </tr>
+            <tr>
+                <td class="tableH">2</td>
+                <td>Yuvraj SINGH</td>
+                <td>102</td>
+                <td rowspan="2" colspan="2">CSK</td>
+            </tr>
+            <tr>
+                <td class="tableH">4</td>
+                <td>Vansh Mehta</td>
+                <td>103</td>
+                <!-- <td>KKR</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

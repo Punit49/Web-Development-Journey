@@ -1,0 +1,1 @@
+// ? Javascript as single threaded language - JavaScript is considered a single-threaded language because it executes code in a single sequence, meaning it has only one call stack to perform tasks.

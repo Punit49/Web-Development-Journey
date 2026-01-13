@@ -1,0 +1,17 @@
+/* class selector */
+.para{
+    background-color: red;
+    color: white;
+}
+/* id selector */
+#art{
+    background-color: green;
+}
+/* element selector */
+section{
+    background-color: yellow;
+}
+/* group selector */
+h1, section, .para , #art {
+    color: blue;
+}

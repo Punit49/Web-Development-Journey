@@ -1,0 +1,3 @@
+// ? Specificity in CSS is a weighting system that gives different types of selectors varying levels of importance. The rule with the highest specificity "wins" and its styles are applied.
+
+// ? Cascading in CSS refers to the algorithm browsers use to determine which CSS rules apply to an element when multiple rules conflict. It is a fundamental concept in CSS, as it dictates how styles are prioritized and ultimately rendered on a web page.

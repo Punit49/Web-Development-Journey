@@ -1,0 +1,2 @@
+// ? escape characters - are special characters used within strings to represent characters that would otherwise be difficult or impossible to type directly. They are preceded by a backslash (\) to indicate that the following character has a special meaning.
+// Their length is 1, even they are 2 in number.
