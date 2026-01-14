@@ -1,11 +1,11 @@
-const sum = (a, b) => a + b;
-const mul = (a, b) => a * b;
-const PI = 3.14;
-
-    // -- Method 1 --
-    module.exports = {sum, mul, PI};
+// const sum = (a, b) => a + b;
+// const mul = (a, b) => a * b;
+// const PI = 3.14;
 
 /* 
+    -- Method 1 --
+    module.exports = {sum, mul, PI};
+
     -- Method 2 --
     module.exports.sum = (a, b) => a + b;
     module.exports.mul = (a, b) => a * b;
@@ -28,3 +28,8 @@ const PI = 3.14;
     exports = sum (It will not work, coz js will not treat it as object)
 
 */
+
+// For import -
+export const sum = (a, b) => a + b;
+export const mul = (a, b) => a * b;
+export const PI = 3.14;
