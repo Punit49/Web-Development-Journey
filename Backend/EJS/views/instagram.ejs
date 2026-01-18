@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<body>
+    <h2>This page Belongs to - <%= username %> </h2>
+    <button>Follow</button>
+    <button>Messege</button>
+
+    <h1>Followers</h1>
+    <!-- Loops in EJS -->
+    <% for(let i = 0; i < followers.length; i++) { %>
+        <li> <%= followers[i] %> </li>
+    <% } %>
+
+</body>
+</html>
