@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Get request form</h3>
+    <form action="http://localhost:8080/register" method="get">
+        <input type="text" name="user" placeholder="Enter Username">
+        <input type="password" name="password" placeholder="Enter password">
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <h3>Post request form</h3>
+    <form action="http://localhost:8080/register" method="post">
+        <input type="text" name="user" placeholder="Enter Username">
+        <input type="password" name="password" placeholder="Enter password">
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
