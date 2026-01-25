@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    
+    <%- include("includes/navbar.ejs") %>
+
+    <main>
+        <div id="posts-container">
+            <% for (const post of posts) { %>
+                <div class="post">
+                    <div class="postContent">
+                        <h4 class="username">
+                            <%= post.username %>
+                        </h4>
+
+                        <p class="content">
+                            <%= post.content %>
+                        </p>
+                    </div>
+
+                    <div class="buttons">
+                        <button>See In Detail</button>
+                        <button>Edit Post</button>
+                        <button>Delete Post</button>
+                    </div>
+
+                </div>
+            <% } %>
+        </div>
+    </main>
+    
+</body>
+</html>
