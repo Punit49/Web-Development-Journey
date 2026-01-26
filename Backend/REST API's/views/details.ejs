@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/details.css">
+</head>
+<body>
+    <%- include("includes/navbar.ejs") %>
+
+    <main>
+        <a href="/posts" class="backBtn">< Go Back!</a>
+
+        <h3>Post Details</h3>
+
+        <div class="detailsBox">
+            <h3 class="username">
+                @<%= post.username %>
+            </h3>
+            <h4 class="content">
+                <%= post.content %>
+            </h4>
+        </div>
+
+    </main>
+
+</body>
+</html>
