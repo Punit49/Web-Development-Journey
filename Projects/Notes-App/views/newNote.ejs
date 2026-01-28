@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crete new Note</title>
+    <link rel="stylesheet" href="/stylesheets/common.css">
+    <link rel="stylesheet" href="/stylesheets/newNote.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+
+    <div class="blob blue"></div>
+    <div class="blob orange"></div>
+    <div class="blob pink"></div>
+    
+    <main>
+        <a href="/notes"><button class="btn">Go Back</button></a><br><br>
+
+        <div class="notes">
+            <h3 class="mb">Create a new Note</h3> 
+            <hr class="mb">
+
+            <form action="/notes/new" method="post">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="Enter Title">
+
+                <label for="content">Content</label>
+                <textarea rows="10" type="text" name="content" placeholder="What's in your mind today..."></textarea>
+
+                <button class="btn" style="width: 6rem;">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

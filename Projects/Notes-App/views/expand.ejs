@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= note.title %> </title>
+    <link rel="stylesheet" href="/stylesheets/common.css">
+</head>
+<body>
+
+    <%- include("includes/header.ejs") %>
+
+    <div class="blob blue"></div>
+    <div class="blob orange"></div>
+    <div class="blob pink"></div>
+    
+    <main>
+        <a href="/notes"><button class="btn">Go Back</button></a><br><br>
+
+        <div class="notes">
+            <div class="note-top">
+                <h5 class="mb"> <%= note.title %> </h5>
+                <span class="timeDate"> <%= note.createdAt %> </span>
+            </div>
+            <hr class="mb">
+            <p> <%= note.content %> </p>
+        </div>
+    </main>
+</body>
+</html>

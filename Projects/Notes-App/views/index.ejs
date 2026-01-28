@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+
+    <main>
+        <h2>--- Notes ---</h2>
+        <br><hr><br>
+
+        <div class="blob blue"></div>
+        <div class="blob orange"></div>
+        <div class="blob pink"></div>
+
+        <div class="notes-container">
+            <% for (const note of notes) { %>
+                <div class="notes">
+
+                    <div class="note-top">
+                        <h5 class="mb"> <%= note.title %> </h5>
+                        <span class="timeDate"> <%= note.createdAt %> </span>
+                        <a href="/notes/<%=note.id%>/pin">
+                            <i class="fa-solid fa-thumbtack pin <%= note.isPinned ? 'activePin' : '' %> "></i>
+                        </a>
+                    </div>
+                    <hr class="mb">
+
+                    <p class="noteContent"> <%= note.content %> </p>
+
+                    <div class="note-bottom buttons">
+                        <a href="/notes/<%= note.id %>"><button class="detailBtn btn">Details</button></a>
+                        <a href="/notes/<%= note.id %>/edit"><button class="editBtn btn">Edit</button></a>
+                        <form action="/notes/<%= note.id %>?_method=DELETE" method="post">
+                            <button class="delBtn btn">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </main>
+
+</body>
+</html>

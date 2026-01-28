@@ -1,0 +1,18 @@
+main{
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem 1rem;
+}
+
+input, textarea{
+    padding: .4rem;
+    background-color: transparent;  
+    border: 1px solid rgb(49, 49, 50);
+    outline: none;
+    color: white;
+}

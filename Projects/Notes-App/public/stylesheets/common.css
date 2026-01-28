@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0b0b0f;
+    color: rgb(232, 232, 232);
+}
+
+header{
+    padding: .4rem 3rem;
+    background: rgba(20, 20, 25, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.title img{
+    height: 50px;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.notes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 1rem;
+}
+
+.notes{
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 10px;
+    padding: .8rem;
+    background: rgba(20, 20, 25, 0.7);
+    box-shadow: 2px 2px 0px 1px #363636;
+    transition: box-shadow, .2s linear;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notes:hover{
+    box-shadow: 2px 2px 0px 2px #363636;
+    transform: scale(1.005);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.8;
+  z-index: -10;
+}
+
+.blob.blue {
+  width: 120px;
+  height: 120px;
+  background: #4f46e5;
+  top: 60px;
+  left: 10px;
+}
+
+.blob.orange {
+  width: 160px;
+  height: 160px;
+  background: #f97316;
+  bottom: -30px;
+  left: 80px;
+}
+
+.blob.pink {
+  width: 90px;
+  height: 90px;
+  background: #ec4899;
+  top: 120px;
+  right: 30px;
+}
+
+.note-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    word-break: break-all;
+}
+
+.note-top span{
+    font-size: .6rem;
+    color: rgb(121, 121, 121);
+}
+
+.noteContent{
+    min-height: 8rem;
+    color: rgb(151, 150, 150);
+    word-wrap: break-word;
+}
+
+.mb{
+    margin-bottom: .8rem;
+}
+
+.timeDate{
+    min-width: fit-content;
+    margin: 0 .7rem;
+}
+
+.btn{
+    padding: .4rem .7rem;
+    background-color: rgb(55, 86, 181);
+    border-radius: 5px;
+    font-size: 1.01rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: .7rem;
+}
+
+.editBtn{
+    background-color: rgb(217, 150, 7);
+}
+
+.delBtn{
+    background-color: red;
+}
+
+.buttons form{
+    display: inline-block;
+}
+
+.pin{
+    color: white;
+}
+
+.activePin{
+    font-size: 1rem;
+    color: red;
+}
