@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(8, 8, 29);
+    color: white;
+    padding: 1rem;
+}
+
+th{
+    font-size: 1.3rem;
+}
+
+td, th{
+    padding: .7rem;
+}
+
+.editBtn{
+    padding: .2rem;
+    text-decoration: none;
+}

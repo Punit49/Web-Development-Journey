@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL USERS</title>
+    <link rel="stylesheet" href="users.css">
+</head>
+<body>
+   <div>
+        <h1>All users</h1> 
+        <br>
+        <button>
+            <a href="/user/new">Add user</a>
+        </button>
+        <br><br>
+   </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Edit Username</th>
+                <th>Delete User</th> 
+            </tr>
+        </thead>
+        
+        <tbody>
+            <% for (const user of users) { %>
+                <tr>
+                    <td><%= user.id %></td>
+                    <td><%= user.email %> </td>
+                    <td><%= user.username %> </td>
+                    <td> <button> <a href="/user/<%= user.id %>/edit" class="editBtn">Edit Username</a> </button> </td>
+                    <td> <button> <a href="/user/<%= user.id %>/delete" class="editBtn">Delete</a> </button> </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>

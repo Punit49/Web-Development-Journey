@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= user.username %> </title>
+</head>
+<body>
+    <h1>Username - <%= user.username %> </h1>
+    <form method="post" action="/user/<%=user.id%>?_method=DELETE">
+        <label for="email"> Enter Email </label>
+        <input type="text" name="email" pl placeholder="Enter your email">
+        <br><br>
+        <label for="password"> Enter your password </label>
+        <input type="password" name="password" placeholder="Enter your password">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
