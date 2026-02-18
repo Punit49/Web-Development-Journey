@@ -1,0 +1,26 @@
+main{
+    margin: 0 auto;
+    width: 30rem;
+}
+
+.chatDetails{
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+textarea{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: .5rem;
+    outline: none;
+}
+
+.chatDetails *{
+    margin-bottom: .8rem;
+}
+
+form > button{
+    font-size: 1.1rem;
+    padding: .2rem;
+}
