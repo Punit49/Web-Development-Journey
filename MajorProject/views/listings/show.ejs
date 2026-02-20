@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <style>
+        img{
+            width: 150px;
+            border-radius: 20px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Listing Details</h1><hr>
+
+        <div class="listingDetails">
+            <h3><%= listing.title %></h3>
+            <img src="<%= listing.image %>" alt="Image">
+            <p>Description - <%= listing.description %></p>
+            <p>Price - <%= listing.price.toLocaleString("en-IN", {style: "currency", currency: "INR", maximumFractionDigits: 0}) %>/Night</p>
+            <p>Location - <%= listing.location %></p>
+            <p>Country - <%= listing.country %></p>
+        </div>
+
+        <form action="/listings/<%= listing._id %>/edit">
+            <button>Update</button>
+        </form>
+        <br>
+        <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
+            <button>Delete</button>
+        </form>
+
+    </main>
+</body>
+</html>

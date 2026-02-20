@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <style>
+        .listings img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h3>All listings</h3> 
+        <form method="GET" action="/listings/new">
+            <button>Create New Listing</button>
+        </form>
+        </br>
+
+        <div class="allListings">
+            <% for (let listing of allListings) { %>
+                <div class="listings">
+                    <img src="<%= listing.image %>" alt="Image" class="listingImages">
+                    <a href="/listings/<%=listing._id%>">
+                        <div class="listingTitle"> <%= listing.title %> </div>
+                    </a>
+                    <div class="listingDescription"> <%= listing.description %> </div>
+                    <div class="listingPrice"> <%= listing.price %> </div>
+                    <div class="listingLocation"> <%= listing.location %> </div>
+                    <div class="listingCountry"> <%= listing.country %> </div>
+                </div>
+                <br>
+            <% } %>
+        </div>
+    </main>
+
+</body>
+</html>
