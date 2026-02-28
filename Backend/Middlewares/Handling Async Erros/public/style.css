@@ -1,0 +1,38 @@
+.allChats{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chats{
+    margin: 1rem;
+    background-color: rgb(52, 51, 51);
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.msgBox{
+    background-color: rgb(34, 104, 234);
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.btns{
+    display: flex;
+    gap: .5rem;
+    margin-top: .4rem;
+}
+
+.chats > *{
+    margin-bottom: .7rem;
+}
+
+.chats .time{
+    font-size: .9rem;
+}
+
+#addBtn button, .msgBox button{
+    padding: .3rem .5rem;
+    cursor: pointer;
+}
