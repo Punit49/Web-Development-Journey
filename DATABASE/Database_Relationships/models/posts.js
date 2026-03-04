@@ -44,7 +44,7 @@ const addData = async () => {
     console.log(res2);
 }
 
-// addData();
+addData();
 
 const addData2 = async () => {
     let user1 = await User.findOne({username: "drdomm24"});
@@ -61,7 +61,7 @@ const addData2 = async () => {
     console.log(res);
 }
 
-// addData2();
+addData2();
 
 const getData = async () => {
     let postData = await Post.find().populate("user"); 
