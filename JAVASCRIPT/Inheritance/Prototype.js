@@ -29,7 +29,7 @@
     let person1 = new person("Punit");
     // console.log(person1.sayHello());
 
-    let person2 = new person("Ram");
+    let person2 = new person("Virat");
     // console.log(person2.sayHello());
 
     // * Instances Doesn't have prototype directly, But Constructor function have 
@@ -102,11 +102,11 @@
         
 // ? Adding function to Object.prototype and accessing it in different data structures.
 Object.prototype.readAloud = function (){
-    console.log("Punit kumar sahu");
+    console.log("Punit sahu");
 };
 
 let yourObj = {
-    name: "Ram",
+    name: "Virat",
     age: 22
 }
 
@@ -195,7 +195,7 @@ let Student = {
 }
 
 let Teacher = {
-    name: "mehta", 
+    name: "someTeacher", 
     // __proto__: Student // Way 1
 }
 
